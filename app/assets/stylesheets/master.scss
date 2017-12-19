@@ -1,1 +1,44 @@
 @import "bootstrap";
+
+// MEDIA QUERIES
+
+@media (max-width: 870px) {
+  .top-nav { height: 105px !important; }
+  .nav-logo { height: 100px !important; width: 136px !important; }
+  .nav-title { font-size: 20px !important; padding-top: 55px !important; }
+}
+
+@media (max-width: 450px) {
+  .top-nav { height: 90px !important; }
+  .nav-logo { content:url('logo.png') !important; height: 60px !important; width: 60px !important; margin-top: 13px !important; }
+  .nav-title { padding-top: 50px !important; }
+
+}
+
+body {
+  color: black;
+  background-image: url("/assets/bg.png");
+}
+
+.top-nav {
+  height: 143px;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.35);
+  border-bottom: 3px grey solid;
+  background-color: white; 
+}
+
+.nav-logo {
+  height: 140px;
+  width: 190px;
+}
+
+.nav-title {
+  font-size: 25px;
+  padding-top: 75px;
+}
+
+.float-right {
+  height: 140px;
+
+
+}

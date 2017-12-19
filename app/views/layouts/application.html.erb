@@ -1,14 +1,49 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Ajreport</title>
-    <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+<head>
+  <title>Ajreport</title>
+  <%= csrf_meta_tags %>
 
-  <body>
-    <%= yield %>
-  </body>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+
+<body>
+
+  <!-- NAVBAR START -->
+  <!-- <div class="container">
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+      <a href="#" class="navbar-logo" >
+        <img src="/logo-la.png" alt="asian-americans-advancing-justice-la-logo" height="42" width="42">
+      </a>
+    </nav>
+  </div> -->
+
+  <div class="top-nav">
+    <div class="col-12 col-md-10 offset-md-1">
+
+      <div class="float-left">
+        <a href="#">
+          <img class="nav-logo" src="/assets/logo-la.png" alt="asian-americans-advancing-justice-la-logo" aria-hidden="true">
+        </a>
+      </div>
+
+      <div class="float-right">
+        <h1 class="nav-title">A Community of Contrasts</h1>
+      </div>
+
+    </div>
+  </div>
+  <br class="clear-fix" />
+
+
+  <!-- NAVBAR END -->
+
+
+  <%= yield %>
+</body>
+
+
 </html>
