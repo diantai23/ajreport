@@ -10,21 +10,21 @@
 
 @media (max-width: 450px) {
   .top-nav { height: 90px !important; }
-  .nav-logo { content:url('logo.png') !important; height: 60px !important; width: 60px !important; margin-top: 13px !important; }
+  .nav-logo { content:url('/assets/logo.png') !important; height: 60px !important; width: 60px !important; margin-top: 13px !important; }
   .nav-title { padding-top: 50px !important; }
 
 }
 
 body {
   color: black;
-  background-image: url("/assets/bg.png");
+  background-image: image_url("bg.png");
 }
 
 .top-nav {
   height: 143px;
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.35);
   border-bottom: 3px grey solid;
-  background-color: white; 
+  background-color: white;
 }
 
 .nav-logo {
