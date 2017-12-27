@@ -6,11 +6,14 @@
   .top-nav { height: 100px !important; }
   .nav-logo { height: 100px !important; height: 80px !important; width: 149px !important; }
   .nav-title { font-size: 20px !important; padding-top: 50px !important; }
+  #map { margin: 0 5% !important; width: 90% !important; }
 }
 
 @media (max-width: 450px) {
   .nav-logo { content:url('/assets/logo.png') !important; height: 55px !important; width: 41px !important; margin-top: 13px !important; }
   .nav-title { padding-top: 50px !important; }
+  #map { margin: 0 0 !important; width: 100% !important; }
+
 
 }
 
@@ -39,6 +42,76 @@ body {
 
 .float-right {
   height: 140px;
-
-
 }
+
+
+
+  /* html, body, #map { height: 100%; margin: 0; padding: 0; } */
+
+  /* Always set the map height explicitly to define the size of the div
+   * element that contains the map. */
+  #map {
+    height: 70%;
+    width: 80%;
+    margin: 0 auto;
+
+  }
+  /* Optional: Makes the sample page fill the window. */
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+
+    .nicebox {
+      position: absolute;
+      text-align: center;
+      font-family: "Roboto", "Arial", sans-serif;
+      font-size: 13px;
+      z-index: 5;
+      box-shadow: 0 4px 6px -4px #333;
+      padding: 5px 10px;
+      margin: 180px;
+      background: rgb(255,255,255);
+      background: linear-gradient(to bottom,rgba(255,255,255,1) 0%,rgba(245,245,245,1) 100%);
+      border: rgb(229, 229, 229) 1px solid;
+    }
+    #controls {
+      top: 10px;
+      left: 110px;
+      width: 380px;
+      height: 60px;
+    }
+    #data-box {
+      top: 10px;
+      left: 500px;
+      height: 45px;
+      line-height: 45px;
+      display: none;
+    }
+    #census-variable {
+      width: 360px;
+      height: 20px;
+    }
+    #legend { display: flex; display: -webkit-box; padding-top: 7px }
+    .color-key {
+      background: linear-gradient(to right,
+        hsl(5, 69%, 54%) 0%,
+        hsl(29, 71%, 51%) 17%,
+        hsl(54, 74%, 47%) 33%,
+        hsl(78, 76%, 44%) 50%,
+        hsl(102, 78%, 41%) 67%,
+        hsl(127, 81%, 37%) 83%,
+        hsl(151, 83%, 34%) 100%);
+      flex: 1;
+      -webkit-box-flex: 1;
+      margin: 0 5px;
+      text-align: left;
+      font-size: 1.0em;
+      line-height: 1.0em;
+    }
+    #data-value { font-size: 2.0em; font-weight: bold }
+    #data-label { font-size: 2.0em; font-weight: normal; padding-right: 10px; }
+    #data-label:after { content: ':' }
+    #data-caret { margin-left: -5px; display: none; font-size: 14px; width: 14px}
