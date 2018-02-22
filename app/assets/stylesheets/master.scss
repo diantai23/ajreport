@@ -49,10 +49,15 @@ body {
 }
 
 .main a {
-  text-decoration: underline; 
+  text-decoration: underline;
 }
 
-.center {
-    margin: auto;
-    width: 74%;
+// .center {
+//     margin: auto;
+//     width: 74%;
+// }
+
+.center,
+.links {
+  padding: 10px 0 10px 20px;
 }
